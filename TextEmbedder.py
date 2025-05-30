@@ -1,4 +1,5 @@
 from sentence_transformers import SentenceTransformer
+import numpy as np
 class TextEmbedder:
     """
     A class to process text by creating overlapping chunks and generating embeddings.
@@ -41,10 +42,29 @@ class TextEmbedder:
         return chunks
 
     def generate_embedding(self, text):
-        """
-        Generates an embedding for the given text
-        """
-        return None
+        """Generates an embedding for the given text"""
+        if not text.strip():
+            return None
+        return self.model.encode(text)
+    
+    def process_text(self, text):
+        """Process text by splitting into chunks and generating embeddings"""
+        chunks = self.create_chunks(text)
+        results = []
+        
+        for chunk in chunks:
+            embedding = self.generate_embedding(chunk)
+            if embedding is not None:
+                results.append((chunk, embedding))
+        
+        return results
+    
+    def average_embeddings(self, embeddings):
+        """Average multiple embeddings into a single vector"""
+        if not embeddings:
+            return None
+        # Stack embeddings and calculate mean along the first axis
+        return np.mean(np.vstack(embeddings), axis=0)
 
 # Example Usage
 if __name__ == "__main__":

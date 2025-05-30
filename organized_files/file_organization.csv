@@ -1,0 +1,5 @@
+original_path,new_path,cluster,cluster_keywords
+/Users/stillkrish/Downloads/AI_File_Organiser/DummyTestsPDF/350KB.pdf,./organized_files/Cluster_0_sed-ut-sit/350KB.pdf,0,"['sed', 'ut', 'sit', 'amet', 'sit amet']"
+/Users/stillkrish/Downloads/AI_File_Organiser/DummyTestsPDF/260KB.pdf,./organized_files/Cluster_0_sed-ut-sit/260KB.pdf,0,"['sed', 'ut', 'sit', 'amet', 'sit amet']"
+/Users/stillkrish/Downloads/AI_File_Organiser/DummyTestsPDF/Free_Test_Data_100KB_PDF.pdf,./organized_files/Cluster_1_eu-sed-lacus/Free_Test_Data_100KB_PDF.pdf,1,"['eu', 'sed', 'lacus', 'ligula', 'et']"
+/Users/stillkrish/Downloads/AI_File_Organiser/DummyTestsPDF/412KB.pdf,./organized_files/Cluster_0_sed-ut-sit/412KB.pdf,0,"['sed', 'ut', 'sit', 'amet', 'sit amet']"
