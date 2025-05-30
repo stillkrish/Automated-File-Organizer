@@ -1,4 +1,4 @@
-# # AI File Organizer
+# # Automated File Organizer utilizing AI
 
 An intelligent document management tool that automatically organizes files based on semantic content using machine learning and natural language processing.
 
